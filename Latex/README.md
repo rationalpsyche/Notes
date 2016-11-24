@@ -1,3 +1,18 @@
+### Font size
+
+```
+\Huge
+\huge
+\LARGE
+\Large
+\large
+\normalsize (default)
+\small
+\footnotesize
+\scriptsize
+\tiny
+```
+
 ### Links
 
 ```
@@ -15,6 +30,7 @@
 ```
 \usepackage{xcolor}
 \definecolor{custom-gray}{gray}{0.9}
+\definecolor{darkgreen}{HTML}{3b7e30}
 ```
 
 ### Minted
@@ -22,6 +38,16 @@
 \begin{minted}[bgcolor=custom-gray,frame=lines]{python}
 
 \end{minted}
+```
+
+### Beamer - references at end of page
+
+```
+\newcommand{\myvfill}{\vskip0pt plus 1filll}
+
+\begin{flushright}
+[\ref{foo}]
+\end{flushright}
 ```
 
 ### Embed ASCII art in Verbatim

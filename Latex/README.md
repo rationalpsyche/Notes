@@ -33,6 +33,14 @@
 \definecolor{darkgreen}{HTML}{3b7e30}
 ```
 
+### Underline with text wrapping
+
+```
+package: soul
+
+\ul{ content }
+```
+
 ### Minted
 ```
 \begin{minted}[bgcolor=custom-gray,frame=lines]{python}

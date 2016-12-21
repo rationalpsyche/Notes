@@ -36,9 +36,20 @@
 ### Underline with text wrapping
 
 ```
-package: soul
+\usepackage{soul}
 
 \ul{ content }
+```
+
+### Box around text
+
+```
+\framebox[\textwidth]{
+\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{
+
+content
+
+} }
 ```
 
 ### Minted

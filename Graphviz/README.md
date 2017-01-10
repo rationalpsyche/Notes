@@ -1,17 +1,9 @@
 # Graphviz
 
+Compile:
 `dot file.dot -T jpg -o name`
 
-Shapes:
-* ellipse
-* box
-* circle
-
-Styles:
-* bold
-* solid
-* dashed
-* dotted
+Example:
 
 ```
 graph Films {
@@ -29,3 +21,15 @@ graph Films {
 	}
 }
 ```
+
+Shapes:
+* ellipse
+* box
+* circle
+* egg
+
+Styles:
+* bold
+* solid
+* dashed
+* dotted

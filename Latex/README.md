@@ -104,3 +104,11 @@ content
 
 * No space in itemize: `\begin{itemize}[noitemsep,nolistsep]`
 
+### Same footnote in different places
+
+```
+\usepackage{scrextend}
+
+Text1 \footnote{This is a registered trade name. \label{refnote}}
+Text2 \footref{refnote}
+```

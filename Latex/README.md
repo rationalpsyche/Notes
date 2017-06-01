@@ -69,6 +69,45 @@ content
 \end{flushright}
 ```
 
+### Algorithm2e side by side
+
+```
+\usepackage[vlined]{algorithm2e} 
+
+\begin{minipage}[t]{8cm}
+	
+  \vspace{0pt}  
+  %\RestyleAlgo{boxruled}
+
+  \begin{algorithm}[H]
+
+ state $\leftarrow plaintext$\\
+ \For{$r\in1..9$}{
+  AddRoundKey(state,$k_{r-1}$)\\
+  ShiftRows(state)\\
+ 
+ }
+  \end{algorithm}
+
+\end{minipage}
+
+
+\begin{minipage}[t]{8cm}
+  \vspace{0pt}
+  \begin{algorithm}[H]
+
+  state $\leftarrow plaintext$\\
+ \For{$r\in1..9$}{
+  AddRoundKey(state,$k_{r-1}$)\\
+  ShiftRows(state)\\
+ 
+ }
+
+  \end{algorithm}
+  
+	\end{minipage}
+```
+
 ### Embed ASCII art in Verbatim
 
 ```

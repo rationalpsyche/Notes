@@ -1,2 +1,2 @@
 # Notes
-Notes about commands (unix,latex, etc.) that I never remember 
+Notes about Latex, OS, Graphviz and Unix commands 

@@ -1,0 +1,1 @@
+`exiftool -all= -overwrite_original photo.jpg`

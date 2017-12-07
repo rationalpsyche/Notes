@@ -4,11 +4,11 @@
 
 In the IPSec protocol there are two principal protocols: the Authentication Header (AH) and the Encapsulation Security Payload (ESP).
 
-| AH | ESP
---- | --- | ---
-Source authentication | + | +
-Data integrity | + | +
-Confidentiality | - | +
+| | AH | ESP |
+| --- | --- | --- |
+| Source authentication | + | + |
+| Data integrity | + | + |
+| Confidentiality | - | + |
 
 ## Security associations
 

@@ -36,9 +36,9 @@ We focus only on tunnel mode.
 		      +-------------- "Enchilada" authenticated -------------------------------------+
                            +-----------------------------Encrypted---------------------------+
 New IP header | ESP Header | Original IP Header | Original IP Datagram payload | ESP Trailer | ESP MAC
-					|																|
-					V																V
-			   [SPI || Seq #]							[Padding || Padding length || Next header]
+					|                                                               |
+					V                                                               V
+			   [SPI || Seq #]                                [Padding || Padding length || Next header]
 
 ```
 

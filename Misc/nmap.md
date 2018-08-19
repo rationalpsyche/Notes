@@ -1,3 +1,60 @@
+# nmap
+
+## Host discovery
+
+### -sL (List Scan)
+
+The idea is to simply list the hosts to scan. Therefore this option is a degenerate form of host discovery.
+
+### -sn (no port scan)
+
+This option tells nmap not to scan ports after host discovery
+
+This host discovery makes use of:
+* ICMP echo request
+* TCP SYN to port 443
+* TCP ACK to port 80
+* ICMP timestamp request
+
+In previous releases -sn was known as -sP
+
+### -Pn (no ping)
+
+This option treats the IP as if it were up, regardless of a response to ping
+
+### -PS <port list> (TCP SYN Ping)
+
+It sends an empty TCP packet with the SYN flag set.
+
+Example: -PS22-25,80 (there can be no space between -PS and the port list)
+
+### -PA <port list> (TCP ACK Ping)
+
+Exactly the same as above but with the ACK flag up.
+
+The reason for offering both SYN and ACK probes is to maximize the chances of bypassing firewalls.
+It is common for firewalls to block incoming SYN packets except for those destined to public services.
+
+### -PU <port list> (UDP Ping)
+
+It sends a UDP packet to the given port.
+
+### -PY <port list> (SCTP INIT Ping)
+
+This option sends an SCTP packet containing a minimal INIT chunk.
+
+### -PE, -PP, -PM (ICMP Ping Types)
+
+Nmap can send the standard packets sent by ping
+
+### -PO <port list> (Protocol Ping)
+
+Nmap sends IP packets with the specified protocol number set in their IP header.
+
+### -PR (ARP Ping)
+
+ARP scan puts nmap in charge of ARP requests. If a response is received nmap does not even need to worry about the IP based ping packets since it already knows that the host is up.
+
 ## Scan types
 
 ### -sS TCP SYN

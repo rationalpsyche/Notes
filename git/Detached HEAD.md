@@ -1,8 +1,8 @@
 ## Detached HEAD
 
-A *ref* is a name for a SHA. Branches or tags are refs.
+A *ref* is a name for a SHA-1. Branches or tags are refs.
 
-HEAD is a symbolic reference to the tip of a branch, it usually points to a ref instead of directly to the SHA.
+HEAD is a symbolic reference to the tip of a branch, it usually points to a ref instead of directly to the SHA-1.
 
 ```
 mkdir detached-head
@@ -35,3 +35,6 @@ ref: refs/heads/branch1
 $ cat refs/heads/branch1
 94576f196aed3baa69f3b3d226ec3d16ca65b56c
 ```
+
+When you checkout anything that is not a proper local branch name then HEAD is no longer a symbolic reference but it actually contains the SHA-1 hash of the commit you are switching to. This is called a **detached HEAD**.
+
